@@ -3,14 +3,13 @@ package scholarship.udacity.google.udacitypracticalquizone;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -76,5 +75,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     boolean isNotEmpty(String string) {
         return !string.trim().equals("");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        outState.putString(EXTRA_NAME, etName.getText().toString());
+        outState.putString(EXTRA_EMAIL, etEmail.getText().toString());
+        outState.putString(EXTRA_DESCRIPTION, etDescription.getText().toString());
+        super.onSaveInstanceState(outState, outPersistentState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle b) {
+        super.onRestoreInstanceState(b);
+        etName.setText(b.getString(EXTRA_NAME));
+        etEmail.setText(b.getString(EXTRA_EMAIL));
+        etDescription.setText(b.getString(EXTRA_DESCRIPTION));
     }
 }
