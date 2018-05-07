@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="scholarship.udacity.google.udacitypracticalquizone.MainActivity">
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/menu_button_profile"
+        app:showAsAction="always" />
+</menu>

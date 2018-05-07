@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UdacityPracticalQuizOne</string>
+    <string name="menu_button_profile">Show Profile</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="text_next_button">NEXT</string>
+    <string name="hint_description">Write about yourself</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_name">Name</string>
+</resources>

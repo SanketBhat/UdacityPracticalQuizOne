@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/wallpaper">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="243dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="@string/hint_name"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="187dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp"
+        android:layout_marginStart="24dp">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_comment_black_24dp"
+            android:hint="@string/hint_description"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@color/colorAccent"
+        android:text="@string/text_next_button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
